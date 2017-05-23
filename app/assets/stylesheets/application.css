@@ -22,12 +22,12 @@ body{
     font-family: Meiryo, sans-serif;
 }
 
-/*リンク*/
+/*リンク
 a:link{color: #00c;}
 a:visited{color: #00c;}
 a:hover{color: #ccf;}
 a img{border: none;}
-
+*/
 
 /*全体の枠*/
 div#container{
@@ -36,11 +36,10 @@ div#container{
     width: 780px;
 }
 
-div#header{
-    background-color: blue;
-    
+/*ヘッダー*/
+div#header h1{
+    margin: 0;
 }
-
 
 /*左の枠*/
 div#content{
@@ -49,20 +48,49 @@ div#content{
     padding: 10px 10px 10px 0;
 }
 
+div#content hr{
+    opacity: 0.5;
+}
+
+div#content h2{
+    padding: 20px 0 0 0;
+    margin: 0;
+    font-size: 25px;
+}
+
 /*右の枠*/
 div#sidebar{
     float:left;
-    width: 230px;
+    width: 250px;
     background-color:  #e8ffff;
     padding: 5px;
-    font-size: 86%;
+    font-size: 90%;
 }
 
-/*メニューバーのリンク*/
+div#sidebar ul li{
+    list-style: none;
+}
+
+div#sidebar h2{
+    font-size: 18px;
+}
+
+div#sidebar tr td{
+    padding: 5px;
+}
+
+/*メニューバーのリンク
 div.menubar a {text-decoration:none;}
 
-/*メニューバーのリンク(未訪問)*/
-div.member a:link{color: #ccc;}
+メニューバーのリンク(未訪問)
+div.menubar a:link{color: #ccc;}
 
-/*メニューバーのリンク(訪問済み)*/
-div.member a:visited {color: #ccc;}
+メニューバーのリンク(訪問済み)
+div.menubar a:visited {color: #ccc;}
+*/
+
+div.menubar {
+    background-color: #e8ffee;
+    padding:10px 10px 10px 10px;
+    margin-bottom: 5px;
+}
