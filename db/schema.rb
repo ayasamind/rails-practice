@@ -11,18 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170523141805) do
+ActiveRecord::Schema.define(version: 20170526110329) do
 
   create_table "members", force: true do |t|
     t.integer  "number",                        null: false
     t.string   "name",                          null: false
     t.string   "full_name"
     t.string   "email"
-    t.date     "birthday"
     t.integer  "gender",        default: 0,     null: false
     t.boolean  "administrator", default: false, null: false
     t.datetime "created_at",                    null: false
     t.datetime "updated_at",                    null: false
+    t.date     "birthday"
   end
 
 end
