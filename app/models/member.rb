@@ -5,7 +5,7 @@ class Member < ActiveRecord::Base
             uniqueness: true
         
         validates :name, presence: true,
-            format: { with: /\A[A-Za-z]\w*\z/, allow_brank: true }, #空を禁止、英数字のみ、文字列の先頭はアルファベット
+            format: { with: /\A[A-Za-z]\w*\z/, allow_brank: true, message: :invalid_member_name },
                     length: {minumum: 2, maximum: 20, allow_brank: true },#2文字以上20文字以下
                     uniqueness: {case_sensitive: false} #重複を禁止
         
